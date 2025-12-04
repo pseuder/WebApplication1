@@ -20,6 +20,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// [新增] 啟用 Session 中介軟體
+app.UseSession();
+
 app.MapStaticAssets();
 
 app.MapControllerRoute(
